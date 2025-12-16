@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title> Valeu Natalina!🎄</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: #fff;
+      background: url('valeu natalina.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .card {
+      background: rgba(139, 0, 0, 0.144);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 40px 28px;
+      width: 94%;
+      max-width: 560px;
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      position: relative;
+      z-index: 2;
+    }
+
+    .card img {
+      width: 120px;
+      margin-bottom: 15px;
+      border-radius: 50%;
+    }
+
+    .team-photo {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin: 15px 0;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+
+    h1 {
+      margin: 10px 0 16px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .assinatura {
+      margin-top: 20px;
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    /* Neve */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: #fff;
+      font-size: 1em;
+      user-select: none;
+      animation: fall linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh);
+      }
+    }
+
+    /* Responsividade extra */
+    @media (max-width: 480px) {
+      .card {
+        width: 96%;
+        min-height: 70vh;
+        padding: 44px 26px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+
+      .assinatura {
+        font-size: 1rem;
+      }
+    }
+
+      p {
+        font-size: 1.05rem;
+      }
+
+      .card {
+        padding: 36px 28px;
+      }
+
+      .assinatura {
+        font-size: 1rem;
+      }
+    }
+
+      .assinatura {
+        font-size: 0.9rem;
+      }
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Substitua o src por uma imagem de Natal que preferir -->
+    
+
+    <h1>VALEU NATALINA! 😎🎄</h1>
+
+    <!-- Foto da equipe -->
+    <!-- Substitua o src pela foto do time -->
+    
+    <p>
+      Que esse panetone de frutas cristalizadas possa levar doçura a todos os perrengues desse setor.
+      Feliz Natal, Veolia. Feliz Natal, Alcoa. Feliz Natal, Moura. Feliz Natal plano de ring (anel?????).
+      E a todas as LDs. Que possamos entrar em 2026 mais UNIFICADOS (sem travar).
+
+    </p>
+  </p>
+  FELIZ NATAL, ARQUIVO! ❤️
+  </divp>
+
+    <div class="assinatura">
+      Com carinho 💖<br />
+      Boas festas!
+    </div>
+
+  <!-- Áudio natalino (sinos) -->
+  <audio id="natalSound" autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/12/13/audio_8c8c7e4d6a.mp3" type="audio/mpeg">
+  </audio>
+
+</div>
+
+  <!-- Neve caindo -->
+  <script>
+    const snowflakes = 40;
+    for (let i = 0; i < snowflakes; i++) {
+      const snow = document.createElement('div');
+      snow.className = 'snowflake';
+      snow.innerHTML = '❄';
+      snow.style.left = Math.random() * 100 + 'vw';
+      snow.style.animationDuration = 5 + Math.random() * 5 + 's';
+      snow.style.fontSize = 12 + Math.random() * 18 + 'px';
+      snow.style.opacity = Math.random();
+      document.body.appendChild(snow);
+    }
+  </script>
+
+</body>
+</html>
